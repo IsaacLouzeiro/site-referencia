@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html, .organizador {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lobster', cursive;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* organizador da sessao */
+.organizador {
+    /* background-color: #ebeaeb; */
+    background-color: #11384d;
+    overflow: auto;
+    background-image: url(../img/espiral-escuro.png);
+    background-repeat: repeat-y;
+    background-size: 5%;
+    background-position: left;
+}
+
+/* menu de navegação */
+nav {
+    font-size: 1em;
+    width: 100%;
+    max-width: 70px;
+    background-color: #ebebeb;
+}
+
+@media (max-width: 576px) {
+    /* menu de navegação */
+    nav {
+        font-size: .7em;
+        max-width:40px;
+    }
+}
+
+
+.nav-link {
+    color: rgb(0, 58, 99);
+    text-align: center;
+}
+
+.nav-link:hover,
+.nav-link:checked {
+    color: rgb(0, 129, 146);
+    text-align: center;
+}
+
+.nav-link i {
+    font-size: 1.5em;
+}
+
+
+/* menu de navegação */
+.nav-modo {
+    background-color: #11384d;
+}
+
+.nav-link-modo .nav-link {
+    color: #ebebeb;
+}
+
+/* sessões */
+#sessao1,
+#sessao2,
+#sessao3,
+#sessao4 {
+    min-height: 100%;
+    text-align: center;
+}
+
+.cor {
+    color: #11384d;
+}
+
+
+/* header */
+header {
+    height: 100px;
+}
+
+.referencia p {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+/* SESSÃO 1 */
+
+/* referencia you */
+#you {
+    width: 100px;
+    height: 40px;
+    background-image: url(../img/you.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* referencia sherlock */
+.sherlock {
+    width: 150px;
+    height: 75px;
+    background-image: url(../img/sherlock.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* referencia mr robot */
+.mrrobot {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/mrrobot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* referencia stranger things */
+.strangerthings {
+    width: 80px;
+    height: 100px;
+    background-image: url(../img/strangerthings.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* referencia the office */
+.theoffice {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/theoffice.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* referencia anne with an e */
+.anne {
+    width: 150px;
+    height: 100px;
+    background-image: url(../img/anne.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* referencia dexter */
+.dexter {
+    width: 65px;
+    height: 100px;
+    background-image: url(../img/dexter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/* SESSÃO 2 */
+
+/* switch on off */
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    top: -9px;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
+.bg-claro {
+    background-color: #ebeaeb;
+    background-image: url(../img/espiral-claro.png);
+}
+.sessao2 {
+    background-image: url(../img/fb.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.bg-claro .imagem-poster {
+    display: block;
+}
+
+.fundo {
+    /* background-image: url(../img/luna-lovegood.png); */
+    background: none;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 150px;
+}
+
+.bg-claro,
+.organizador,
+.fundo {
+    transition: background-color 1s, background-image 1s, display 1s;
+}
+
+.d-none {
+    transition: display 1s;
+}
+
+
+.fundo-brilho {
+    background-image: url(../img/brilho.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 100px;
+    background-size: contain;
+}
+
+.imagem-poster {
+    transition: display 1s;
+    width: 150px;
+    height: 150px;
+    border: 6px solid #11384d;
+    background-color: rgba(143, 143, 143, 0.178);
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+    cursor: pointer;
+}
+
+.success {
+    display: none;
+}
+
+.jogosvorazes-nao,
+.narnia-nao,
+.harrypotter-sim {
+    display: none;
+}
+
+.maozinha:hover {
+    color: #2c9cd8;
+    cursor: pointer;
+}
+
+#toca-aqui {
+    display: none;
+}
+
+
+.lista li {
+    display: inline-block;
+    list-style-type: none;
+}
